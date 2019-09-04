@@ -1,0 +1,4 @@
+#!/bin/sh
+sudo docker rmi $(docker images | grep "^<none>" | awk "{print $3}")  --force # If there are no untagged images, this returns an error. Just ignore that.
+sudo docker build -t trends:latest .
+sudo docker-compose --log-level ERROR up # Log level set to ignore debugs.
