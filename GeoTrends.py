@@ -20,7 +20,7 @@ import requests
 import logging
 from tools.bucket_storage import send_to_client
 import time
-api_key = "HI3nvj7AiMjuTTFrXatqUlem2vXceoX0"
+api_key = "ENTER API KEY HERE"
 
 """
 # Fixing weird basemap thing
