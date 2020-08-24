@@ -41,23 +41,23 @@ In future builds, if no changes have been made, run `docker-compose --log-level 
 - top_owners_cutoff (int)
 - resample_size (str)
   - Bins for charting values, e.x. "1M"
-![alt text](https://github.com/parkervg/PermitTrends/tree/master/data/resample_params.png)
+![alt text](https://github.com/parkervg/PermitTrends/blob/master/data/resample_params.png)
 
 
 # Example Outputs:
 
 ### GeoTrends:
 ## Austin
-![alt text](https://github.com/parkervg/PermitTrends/tree/master/outputs/AustinGeoTrends.png)
+![alt text](https://github.com/parkervg/PermitTrends/blob/master/outputs/AustinGeoTrends.png)
 ## LA
-![alt text](https://github.com/parkervg/PermitTrends/tree/master/outputs/LAGeoTrends.png)
+![alt text](https://github.com/parkervg/PermitTrends/blob/master/outputs/LAGeoTrends.png)
 ## Chicago
-![alt text](https://github.com/parkervg/PermitTrends/tree/master/outputs/ChicagoGeoTrends.png)
+![alt text](https://github.com/parkervg/PermitTrends/blob/master/outputs/ChicagoGeoTrends.png)
 
 ### PermitTrends
 ## Austin
-![alt text](https://github.com/parkervg/PermitTrends/tree/master/outputs/AustinPermitTrends.png)
+![alt text](https://github.com/parkervg/PermitTrends/blob/master/outputs/AustinPermitTrends.png)
 ## LA
-![alt text](https://github.com/parkervg/PermitTrends/tree/master/outputs/LAPermitTrends.png)
+![alt text](https://github.com/parkervg/PermitTrends/blob/master/outputs/LAPermitTrends.png)
 ## Chicago
-![alt text](https://github.com/parkervg/PermitTrends/tree/master/outputs/ChicagoPermitTrends.png)
+![alt text](https://github.com/parkervg/PermitTrends/blob/master/outputs/ChicagoPermitTrends.png)
