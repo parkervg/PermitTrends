@@ -15,18 +15,18 @@ In future builds, if no changes have been made, run `docker-compose --log-level 
   - Location tag to be used in visualization title
 - **min_dt (str)**
   - Minimum date cutoff
-- **date_col (str)** 
-- filter_cols (dict) 
-  - Columns to filter by 
-  - e.x. {"Permit Class Mapped": ["Residential"], "Permit Type Desc": ["Building Permit"]} 
+- **date_col (str)**
+- filter_cols (dict)
+  - Columns to filter by
+  - e.x. {"Permit Class Mapped": ["Residential"], "Permit Type Desc": ["Building Permit"]}
   - For numerical data (e.g. sqft), {"Total Lot SQFT": [1000,]} would return all permits with sqft greater than 1000 sqft
   - {"Total Lot SQFT": [1000,15000]} returns between 1000 and 15000
 - remove_values (dict)
   - Values to remove in a specific column
   - Same syntax as filter_cols. {"Owner": ["NULL"]} removes all "NULL" values in the "Owner" column.
 - num_results
-- max_dt (str) 
-  - Maximum date cutoff 
+- max_dt (str)
+  - Maximum date cutoff
 - display_kwargs
   - boolean, decides whether to include kwargs textbox in plot
 
@@ -40,24 +40,24 @@ In future builds, if no changes have been made, run `docker-compose --log-level 
 - **owners_col (str)**
 - top_owners_cutoff (int)
 - resample_size (str)
-  - Bins for charting values, e.x. "1M" 
-![alt text](https://github.com/BrickschainBC/PermitTrends/blob/api_edits/data/resample_params.png)
+  - Bins for charting values, e.x. "1M"
+![alt text](https://github.com/parkervg/PermitTrends/tree/master/data/resample_params.png)
 
 
 # Example Outputs:
 
 ### GeoTrends:
 ## Austin
-![alt text](https://github.com/BrickschainBC/PermitTrends/blob/api_edits/outputs/AustinGeoTrends.png)
+![alt text](https://github.com/parkervg/PermitTrends/tree/master/outputs/AustinGeoTrends.png)
 ## LA
-![alt text](https://github.com/BrickschainBC/PermitTrends/blob/api_edits/outputs/LAGeoTrends.png)
+![alt text](https://github.com/parkervg/PermitTrends/tree/master/outputs/LAGeoTrends.png)
 ## Chicago
-![alt text](https://github.com/BrickschainBC/PermitTrends/blob/api_edits/outputs/ChicagoGeoTrends.png)
+![alt text](https://github.com/parkervg/PermitTrends/tree/master/outputs/ChicagoGeoTrends.png)
 
 ### PermitTrends
 ## Austin
-![alt text](https://github.com/BrickschainBC/PermitTrends/blob/api_edits/outputs/AustinPermitTrends.png)
+![alt text](https://github.com/parkervg/PermitTrends/tree/master/outputs/AustinPermitTrends.png)
 ## LA
-![alt text](https://github.com/BrickschainBC/PermitTrends/blob/api_edits/outputs/LAPermitTrends.png)
+![alt text](https://github.com/parkervg/PermitTrends/tree/master/outputs/LAPermitTrends.png)
 ## Chicago
-![alt text](https://github.com/BrickschainBC/PermitTrends/blob/api_edits/outputs/ChicagoPermitTrends.png)
+![alt text](https://github.com/parkervg/PermitTrends/tree/master/outputs/ChicagoPermitTrends.png)

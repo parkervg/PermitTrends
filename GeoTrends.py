@@ -20,7 +20,7 @@ import requests
 import logging
 from tools.bucket_storage import send_to_client
 import time
-api_key = "ENTER API KEY HERE"
+mapquest_api_key = "ENTER API KEY HERE"
 
 """
 # Fixing weird basemap thing
@@ -205,7 +205,7 @@ class GeoTrends():
         Uses MapQuest's API in get_intersections() to find nearest street and cross-street.
         """
         coords = str(coords).replace("(","").replace(")","")
-        response = requests.get("http://www.mapquestapi.com/geocoding/v1/reverse?key={}&location={}&includeRoadMetadata=true&includeNearestIntersection=true".format(api_key, coords))
+        response = requests.get("http://www.mapquestapi.com/geocoding/v1/reverse?key={}&location={}&includeRoadMetadata=true&includeNearestIntersection=true".format(mapquest_api_key, coords))
         street1 = re.sub("\d+", "", response.json()["results"][0]["locations"][0]["street"]).strip()
         street2 = response.json()["results"][0]["locations"][0]["nearestIntersection"]["streetDisplayName"]
         return "{} and {}".format(street1,street2)
